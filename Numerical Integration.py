@@ -63,7 +63,7 @@ def plotNumericalIntegration(f,a,b,N,n):
 
     plt.subplot(1,3,1)
     plt.plot(X,Y,'b')
-    x_left = x[:-1] # Left endpoints
+    x_left = x[:-1] # venstre endpoints
     y_left = y[:-1]
     plt.plot(x_left,y_left,'b.',markersize=10)
     plt.bar(x_left,y_left,width=(b-a)/N,alpha=0.2,align='edge',edgecolor='b')
@@ -79,7 +79,7 @@ def plotNumericalIntegration(f,a,b,N,n):
 
     plt.subplot(1,3,3)
     plt.plot(X,Y,'b')
-    x_right = x[1:] # Left endpoints
+    x_right = x[1:] # venstre endpoints
     y_right = y[1:]
     plt.plot(x_right,y_right,'b.',markersize=10)
     plt.bar(x_right,y_right,width=-(b-a)/N,alpha=0.2,align='edge',edgecolor='b')
